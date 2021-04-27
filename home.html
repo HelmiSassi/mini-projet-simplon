@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <h2>Réservez vos places pour le spectacle</h2>
+    <form id="myForm">
+
+        <div id="place">
+            <label>Combien de places voulez-vous acheter?</label><br>
+        
+            <input type="number" id="nbplace"  style="width: 5%;" oninput="affichInput()" value="">
+        </div>
+
+        <div id="rang">
+            <label>A quelle rangée voulez-vous aller?</label><br>
+        
+            <input type="number" id="nbrang" name="rang"  style="width: 5%;" oninput="oninput.value" value="">
+        </div>
+        
+        
+    </form>
+    <div id="btn">
+        <button type="submit" onclick="pushtable()">RESERVEZ</button>
+    </div>
+    </div>
+    <div style="font-size:small; margin-left: 5%;">Appuyez sur F12 pour afficher le résultat</div>
+</body>
+   <script src="./home.js"></script>
+</html>
